@@ -1,15 +1,3 @@
-"""HTML template for the BLT GitHub App landing page.
-
-This is auto-generated from templates/index.html.
-Edit templates/index.html and regenerate this file before deploying.
-
-Template variables:
-    {{INSTALL_URL}} — GitHub App installation URL
-    {{YEAR}} — Current year for copyright
-    {{SECRET_VARS_STATUS}} — HTML rows showing environment variable status
-"""
-
-GITHUB_PAGE_HTML = """\
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -64,15 +52,12 @@ GITHUB_PAGE_HTML = """\
         <img src="/logo-sm.png" alt="OWASP BLT logo" class="h-10 w-10 rounded-xl border border-blt-border bg-white object-contain p-1">
         <div>
           <p class="text-sm font-semibold uppercase tracking-wide text-gray-500">OWASP BLT</p>
-          <h1 class="text-lg font-extrabold text-blt-dark-base">BLT-Pool</h1>
+          <h1 class="text-lg font-extrabold text-blt-dark-base">BLT-Pool Extension</h1>
         </div>
       </a>
       <nav class="hidden items-center gap-2 rounded-xl border border-blt-border bg-white p-1 md:flex" aria-label="Main">
         <a href="/" class="rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50">Mentors</a>
         <a href="/github-app" class="rounded-lg bg-[#feeae9] px-3 py-2 text-sm font-semibold text-blt-primary">GitHub App</a>
-        <a href="https://owaspblt.org" target="_blank" rel="noopener" class="rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50">
-          OWASP BLT <i class="fa-solid fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i>
-        </a>
       </nav>
       <span role="status" aria-label="Service status: Operational" class="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
         <i class="fa-solid fa-circle text-[0.45rem]" aria-hidden="true"></i>
@@ -91,11 +76,11 @@ GITHUB_PAGE_HTML = """\
             BLT-Pool Repo Page for OWASP-BLT
           </span>
           <h2 class="text-3xl font-extrabold leading-tight text-blt-dark-base sm:text-5xl">
-            Automate Your GitHub Workflow
-            <span class="text-blt-primary">with Intelligent Automation</span>
+            A clean extension landing page
+            <span class="text-blt-primary">for your GitHub workflow</span>
           </h2>
           <p class="mt-4 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg">
-            Streamline issue assignments, track contributor leaderboards, sync bug reports to BLT, and enforce healthy PR workflows. Built for busy maintainers and first-time contributors.
+            This extension automates assignment flow, leaderboard scoring, bug reporting, and contributor health checks. It is built for busy maintainers and first-time contributors.
           </p>
           <div class="mt-7 flex flex-wrap items-center gap-3">
             <a href="{{INSTALL_URL}}" class="inline-flex items-center gap-2 rounded-md bg-blt-primary px-5 py-3 text-sm font-semibold text-white transition hover:bg-blt-primary-hover focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2">
@@ -259,6 +244,3 @@ GITHUB_PAGE_HTML = """\
 
 </body>
 </html>
-"""
-
-
